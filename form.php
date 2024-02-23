@@ -7,6 +7,17 @@
     <title>php-badwords</title>
 </head>
 <body>
-    
+<h2>Inserisci un paragrafo e la parola da censurare</h2>
+    <form action="censor.php" method="post">
+        <div>
+            <label for="paragraph">Paragrafo:</label>
+            <textarea id="paragraph" name="paragraph"></textarea>
+        </div>
+        <div>
+            <label for="badword">Parola da censurare:</label>
+            <input id="badword" type="text" name="badword">
+        </div>
+        <button type="submit">Invia</button>
+    </form>
 </body>
 </html>
